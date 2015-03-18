@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<root>
+	<configuration>
+		<setting1>unknown</setting1>
+		<setting2>unknown</setting2>
+		<setting3 myAttribute="unknown">unknown</setting3>
+		<setting4>unknown</setting4>
+	</configuration>
+</root>

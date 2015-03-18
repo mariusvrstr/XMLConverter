@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.w3schools.com" xmlns:mstns="http://www.w3schools.com"
+	xmlns="http://www.w3schools.com" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"  attributeFormDefault="qualified" elementFormDefault="qualified" >
+
+<xs:simpleType name="InsertType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Node" />
+    <xs:enumeration value="Attribute" />
+  </xs:restriction>
+</xs:simpleType>
+	
+<xs:element name="Mappings" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+		 <xs:choice minOccurs="0" maxOccurs="unbounded">
+		 
+			<xs:element name="XmlToXmlList" maxOccurs="1" minOccurs="0">
+			  <xs:complexType>
+				<xs:sequence>
+				  <xs:element name="XmlToXml" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+					  <xs:sequence>
+						<xs:element name="SourceFileName" type="xs:string" minOccurs="0" />
+						<xs:element name="Name" type="xs:string" minOccurs="0" />
+						<xs:element name="SourceXPath" type="xs:string" minOccurs="1" />
+						<xs:element name="DestinationXPath" type="xs:string" minOccurs="1" />
+					  </xs:sequence>
+					</xs:complexType>
+				  </xs:element>
+				</xs:sequence>
+			  </xs:complexType>
+			</xs:element>
+			
+			<xs:element name="ConstantToXmlList" maxOccurs="1" minOccurs="0">
+			  <xs:complexType>
+				<xs:sequence>
+				  <xs:element name="ConstantToXml" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+					  <xs:sequence>
+						<xs:element name="Name" type="xs:string" minOccurs="0" />
+						<xs:element name="Value" type="xs:string" minOccurs="1" />
+						<xs:element name="DestinationXPath" type="xs:string" minOccurs="1" />
+					  </xs:sequence>
+					</xs:complexType>
+				  </xs:element>
+				</xs:sequence>
+			  </xs:complexType>
+			</xs:element>
+		
+		</xs:choice>
+    </xs:complexType>
+  </xs:element>	
+</xs:schema>

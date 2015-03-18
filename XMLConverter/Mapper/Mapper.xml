@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Mappings xmlns="http://www.w3schools.com">
+
+	<XmlToXmlList>	
+	
+		<XmlToXml>
+			<Name>Example One</Name>
+			<SourceXPath>/root/source/setting_a/text()</SourceXPath>
+			<DestinationXPath>/root/configuration/setting1/text()</DestinationXPath>
+			<Type>Node</Type>	
+		</XmlToXml>
+		
+		<XmlToXml>
+			<SourceFileName>Source.xml</SourceFileName>
+			<Name>Example Two</Name>
+			<SourceXPath>/root/source/setting_b/text()</SourceXPath>
+			<DestinationXPath>/root/configuration/setting2/text()</DestinationXPath>
+		</XmlToXml>
+		
+		<XmlToXml>
+			<SourceFileName>Source.xml</SourceFileName>
+			<Name>Attribute Mapping</Name>
+			<SourceXPath>/root/source/setting_b/@sourceAttribute</SourceXPath>
+			<DestinationXPath>/root/configuration/setting3/@myAttribute</DestinationXPath>
+		</XmlToXml>
+		
+	</XmlToXmlList>
+	<ConstantToXmlList>
+	
+		<ConstantToXml>
+			<Name>Example Three</Name>
+			<Value>Value C</Value>
+			<DestinationXPath>/root/configuration/setting3/text()</DestinationXPath>
+			<Type>Node</Type>	
+		</ConstantToXml>
+		
+		<ConstantToXml>
+			<Name>Example Four</Name>
+			<Value>Value D</Value>
+			<DestinationXPath>/root/configuration/setting4/text()</DestinationXPath>
+			<Type>Node</Type>	
+		</ConstantToXml>
+		
+	</ConstantToXmlList>
+</Mappings>
