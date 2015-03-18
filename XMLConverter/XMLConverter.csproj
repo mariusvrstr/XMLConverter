@@ -79,12 +79,11 @@
       <LastGenOutput>Global.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Output\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Mapper\Mapper.xml" />
     <Content Include="Mapper\Template.xml" />
+    <Content Include="Output\Out.xml" />
     <Content Include="Source\Source.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
